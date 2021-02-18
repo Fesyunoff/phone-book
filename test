@@ -1,0 +1,15 @@
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "add", "params": {"task":{"name":"serg", "phone_number":"+79009009091", "note":"work"}}}' http://localhost:8991/
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "add", "params": {"task":{"name":"serg", "phone_number":"+79009059591", "note":"home"}}}' http://localhost:8991/
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "add", "params": {"task":{"name":"alex", "phone_number":"+79509009091", "note":"work"}}}' http://localhost:8991/
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "add", "params": {"task":{"name":"alex", "phone_number":"+79059056591", "note":"home"}}}' http://localhost:8991/
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "get", "params": {"task":{"name":"serg"}}}' http://localhost:8991/
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "get", "params": {"task":{"name":"alex"}}}' http://localhost:8991/
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "get", "params": {"task":{"phone_number":"+79059056591"}}}' http://localhost:8991/
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "update", "params": {"task":{"entry_id":1,"name":"serg", "phone_number":"+79509579595", "note":"work"}}}' http://localhost:8991/
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "delete", "params": {"task":{"entry_id":4}}}' http://localhost:8991/
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "get", "params": {"task":{"name":"serg"}}}' http://localhost:8991/
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "get", "params": {"task":{"name":"alex"}}}' http://localhost:8991/
+curl -v POST -d '{"jsonrpc":"2.0", "id": 1, "method": "get", "params": {"task":{"phone_number":"+79059056591"}}}' http://localhost:8991/
+
+
+
